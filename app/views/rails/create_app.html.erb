@@ -1,0 +1,31 @@
+<h3>Tworzenie pierwszej pustej aplikacji w Ruby on Rails</h3>
+
+<p>Najpierw, stwórz folder na projekty i wejdź do niego.</p>
+<div class="shadow-none p-2 bg-light rounded"><samp>$ mkdir projects</samp></div>
+<div class="shadow-none p-2 mb-3 bg-light rounded"><samp>$ cd projects</samp></div>
+
+<p>Aby stworzyć pustą aplikację z domyśliną konfiguracją wpisz w terminalu:</p>
+<div class="shadow-none p-2 mb-3 bg-light rounded"><samp>$ rails new goguidesapp</samp></div>
+
+<p>Teraz poczekaj chwilę. W zależności od komutera, może to potrwać od 1min. do 5min.</p>
+<p>Nasza aplikacja to folder z mnóstwem rzeczy. Wejdźmy teraz w nasz folder:</p>
+<div class="shadow-none p-2 mb-3 bg-light rounded"><samp>$ cd goguidesapp</samp></div>
+
+<p>I uruchomimy lokalny serwer:</p>
+<div class="shadow-none p-2 mb-3 bg-light rounded"><samp>$ rails s</samp></div>
+<p>lub:</p>
+<div class="shadow-none p-2 mb-3 bg-light rounded"><samp>$ rails server</samp></div>
+
+<p>Otwórz teraz stronę <%= link_to "http://localhost:3000", "http://localhost:3000" %>. Powinno się wyświetlić Yay, you are on Rails! i logo Ruby on Rails</p>
+
+<h4>Dodajemy Bootstrap'a</h4>
+<dl>
+  <li><%= link_to "Pobierz bootstrap'a", root_url + "/bootstrap.zip" %></li>
+  <li>Rozpakuj plik bootstrap.zip</li>
+  <li>Przenieś pliki:
+    <ul>
+      <li>katalog vendor/assets przenieś do goguidesapp/vendor</li>
+      <li>katalog vendor/assets przenieś do goguidesapp/vendor</li>
+    </ul>
+  </li>
+</dl>
